@@ -61,7 +61,7 @@ def clear_history() -> None:
 
 # --- Streamlit interface ---
 # 🎨 Streamlit page config
-st.set_page_config(page_title="📚 Study Buddy Chatbot", layout="wide")
+st.set_page_config(page_title="🤖 Bala's Chatbot", layout="wide")
 
 # ---- Sidebar ----
 st.sidebar.title("Settings")

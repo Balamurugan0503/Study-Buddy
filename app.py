@@ -2,12 +2,14 @@ import streamlit as st
 from pydantic import BaseModel
 from typing import List, Dict
 import requests
-from dotenv import load_dotenv
+# from dotenv import load_dotenv
 import os
 import random
+# import streamlit as st
 
+# groq_api_key = st.secrets["GROQ_API_KEY"
 # Load environment variables
-load_dotenv()
+# load_dotenv()
 
 # --- FastAPI logic merged ---
 # Global in-memory history store
@@ -20,7 +22,10 @@ class ChatRequest(BaseModel):
 class ChatResponse(BaseModel):
     response: str
 
-GROQ_API_KEY = os.getenv("GROQ_API_KEY")
+# GROQ_API_KEY = os.getenv("GROQ_API_KEY")
+import streamlit as st
+
+groq_api_key = st.secrets["GROQ_API_KEY"]
 GROQ_API_URL = "https://api.groq.com/openai/v1/chat/completions"
 GROQ_MODEL = "llama-3.1-8b-instant"
 

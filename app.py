@@ -27,7 +27,7 @@ import streamlit as st
 
 GROQ_API_KEY = st.secrets["GROQ_API_KEY"]
 GROQ_API_URL = "https://api.groq.com/openai/v1/chat/completions"
-GROQ_MODEL = "llama-3.1-8b-instant"
+GROQ_MODEL = "ilaama-3.3-70b-versatile"
 
 def chat_with_groq(req: ChatRequest) -> Dict[str, str]:
     """
